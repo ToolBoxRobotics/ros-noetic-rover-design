@@ -1,0 +1,10 @@
+FixedFrame: base_link
+
+Displays:
+  - Name: TF
+    Class: rviz/TF
+    Enabled: true
+
+  - Name: RobotModel
+    Class: rviz/RobotModel
+    Enabled: true

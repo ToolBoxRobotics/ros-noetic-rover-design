@@ -1,0 +1,30 @@
+# ekf_map.yaml (GPS + EKF1 → map)
+
+frequency: 30
+sensor_timeout: 0.5
+two_d_mode: false
+
+publish_tf: true
+
+map_frame: map
+odom_frame: odom
+base_link_frame: base_link
+world_frame: map
+
+# Input from first EKF
+odom0: odom
+odom0_config: [true, true, false,
+               false, false, true,
+               false, false, false,
+               false, false, false,
+               false, false, false]
+
+# GPS (NavSatFix)
+gps0: fix
+gps0_config: [true, true, false,
+              false, false, true,
+              false, false, false,
+              false, false, false,
+              false, false, false]
+gps0_differential: false
+gps0_relative: false

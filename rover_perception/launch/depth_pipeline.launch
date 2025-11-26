@@ -1,0 +1,13 @@
+<launch>
+  <!-- Nodelet manager -->
+  <node pkg="nodelet" type="nodelet" name="perception_manager" args="manager" output="screen"/>
+
+  <!-- Convert depth image to pointcloud / laserscan, etc. -->
+  <node pkg="nodelet" type="nodelet" name="depth_to_cloud"
+        args="load depth_image_proc/point_cloud_xyzrgb perception_manager">
+    <remap from="image_rect" to="/camera/depth/image_raw"/>
+    <remap from="image"      to="/camera/rgb/image_raw"/>
+    <remap from="camera_info" to="/camera/rgb/camera_info"/>
+    <remap from="points"      to="/camera/depth/points"/>
+  </node>
+</launch>
