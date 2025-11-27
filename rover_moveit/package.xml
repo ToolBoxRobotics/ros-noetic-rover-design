@@ -1,0 +1,20 @@
+<package format="2">
+  <name>rover_moveit</name>
+  <version>0.1.0</version>
+  <description>MoveIt configuration for 5-DOF robotic arm control in ROS.</description>
+  <maintainer email="toolbox@example.com">ToolBox Robotics</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>moveit_commander</depend>
+  <depend>moveit_ros_planning_interface</depend>
+  <depend>moveit_ros_perception</depend>
+  <depend>moveit_ros_visualization</depend>
+  <depend>moveit_ros_move_group</depend>
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>trajectory_msgs</depend>
+</package>
