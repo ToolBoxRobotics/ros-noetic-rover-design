@@ -1,0 +1,21 @@
+<package format="2">
+  <name>rover_perception</name>
+  <version>0.1.0</version>
+  <description>Perception stack for the rover, including depth sensing, point cloud generation, and object detection.</description>
+  <maintainer email="toolbox@example.com">ToolBox Robotics</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>image_transport</depend>
+  <depend>nodelet</depend>
+  <depend>depthimage_to_laserscan</depend>
+  <depend>laser_geometry</depend>
+  <depend>pcl_ros</depend>
+  <depend>moveit_commander</depend>
+</package>
