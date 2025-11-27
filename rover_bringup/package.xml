@@ -1,0 +1,21 @@
+<package format="2">
+  <name>rover_bringup</name>
+  <version>0.1.0</version>
+  <description>Launch and bringup for rover hardware including state estimation, sensor integration, and teleoperation.</description>
+  <maintainer email="toolbox@example.com">ToolBox Robotics</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>robot_localization</depend>
+  <depend>tf2_ros</depend>
+  <depend>joy</depend>
+  <depend>teleop_twist_joy</depend>
+  <depend>nmea_navsat_driver</depend>
+  <depend>rosserial_python</depend>
+</package>
