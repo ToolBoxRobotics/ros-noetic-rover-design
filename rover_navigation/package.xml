@@ -1,0 +1,22 @@
+<package format="2">
+  <name>rover_navigation</name>
+  <version>0.1.0</version>
+  <description>Navigation stack for rover using robot_localization and move_base (AMCL, costmaps, planners).</description>
+  <maintainer email="toolbox@example.com">ToolBox Robotics</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>move_base_msgs</depend>
+  <depend>robot_localization</depend>
+  <depend>tf2_ros</depend>
+  <depend>amcl</depend>
+  <depend>move_base</depend>
+  <depend>teb_local_planner</depend>
+  <depend>map_server</depend>
+</package>
